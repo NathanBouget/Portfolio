@@ -1,0 +1,119 @@
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f4f4f4;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#153753;
+color:white;
+padding:15px 40px;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+}
+
+.nav-links li{
+margin-left:20px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+}
+
+.nav-links a:hover{
+opacity:0.7;
+}
+
+.hero{
+text-align:center;
+padding:100px 20px;
+}
+
+.button{
+background:#163853;
+color:white;
+padding:10px 20px;
+text-decoration:none;
+border-radius:5px;
+}
+
+.projects{
+padding:40px;
+}
+
+.project-card{
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:8px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+cursor:pointer;
+transition:all 0.3s ease;
+}
+
+.project-card:hover{
+transform:scale(1.02);
+}
+
+.details{
+display:none;
+margin-top:15px;
+}
+
+.project-card.active{
+transform:scale(1.03);
+}
+.image_cv img{
+display:block;
+margin:40px auto;
+max-width:800px;
+width: 50%;
+height:auto;
+}
+
+.img-faf{
+width: 60%;
+height: auto;
+display: block;
+margin: 0 auto;
+}
+
+.img-Signal{
+width: 40%;
+height: auto;
+display: block;
+margin: 0 auto;
+}
+.img-SQL{
+width: 50%;
+height: auto;
+display: block;
+margin: 0 auto;
+}
+
+.img-Poo1{
+width: 30%;
+height: auto;
+display: block;
+margin: 0 auto;
+}
+.img-Poo2{
+width: 60%;
+height: auto;
+display: block;
+margin: 0 auto;
+}
+
+.image-container {
+display: flex;
+justify-content: center;
+gap: 20px; /* Espace entre les images */
+flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire sur petits écrans */
+}

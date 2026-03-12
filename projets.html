@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<title>Portfolio - Nathan Bouget</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+<nav class="navbar">
+<h1 class="logo">Nathan Bouget</h1>
+
+<ul class="nav-links">
+<li><a href="index.html">Accueil</a></li>
+<li><a href="projets.html">Projets</a></li>
+<li><a href="competences.html">Compétences</a></li>
+<li><a href="cv.html">CV</a></li>
+<li><a href="apropos.html">À propos</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="projects">
+
+<h1>Mes Projets</h1>
+
+<h2>Deuxième année de classe préparatoire</h2>
+
+<article class="project-card" onclick="toggleProject(this)">
+
+<h3>Woldwide Weather Watcher</h3>
+<p class="short">
+Conception et développement d'une station météo portable.</p>
+<div class="details">
+<p>
+L'objectif de ce projet était d'assembler et de programmer une petite station météo fonctionnant sur la base d'une carte Arduino et qui récupère périodiquement des informations tels que la température, l'humidité ou la positions GPS et les enregisre sur une carte SD.
+<br>
+<img class="img-SQL" src="images/bdd_sql_a1.png" alt="Schéma de la base de données d'entreprise"/>
+</p>
+<p><strong>Technologies :</strong> C, C++</p>
+<p><strong>Compétences :</strong> Programmation optimisée pour système embarqué, lecture de capteurs, formater correctement une carte SD</p>
+
+</div>
+
+</article>
+
+
+
+<article class="project-card" onclick="toggleProject(this)">
+
+<h3>Jeu de la Vie en Poo</h3>
+<p class="short">
+Simulation d'un jeu de la vie en programmation orientée objet.
+</p>
+<div class="details">
+<p>
+Ce projet consistait à simuler le jeu de la vie de John Conway en utilisant la programmation orientée objet. Le jeu de la vie est un automate cellulaire où chaque cellule peut être vivante ou morte, et son état évolue en fonction de règles simples basées sur les états de ses voisins. Nous avons fait ce projet en utilisant le langage python et avons créé une interface graphique pour visualiser l'évolution du jeu. De plus nous avons implémenté un moyen de sauvegarder et de charger des configurations de cellules pour pouvoir les réutiliser ultérieurement. Finalement, nous avont ajouté des paramètres personnalisables pour les règles du jeu, permettant ainsi d'explorer différentes variantes du jeu de la vie.
+<br>
+<div class="image-container">
+    <img class="img-Poo1" src="images/terminal_poo.png" alt="Terminal permettant de parametrer le jeu"/>
+    <img class="img-Poo2" src="images/game_poo.png" alt="Interface graphique du jeu"/>
+</div>
+<br>
+Ce projet nous a permis de mettre en pratique nos compétences en programmation orientée objet, en développement d'interfaces graphiques et en gestion de fichiers pour créer une simulation interactive du jeu de la vie.
+</p>
+<p><strong>Technologies :</strong> Python</p>
+<p><strong>Compétences :</strong> programmation orientée objet, développement d'interfaces graphiques, gestion de fichiers</p>
+
+</div>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+<h2>Première année de classe préparatoire</h2>
+
+
+
+<article class="project-card" onclick="toggleProject(this)">
+
+<h3>Projet Fast and Furious</h3>
+
+<p class="short">
+Simulation du comportement de voitures en Python dans un environnement contrôlé.
+</p>
+
+<div class="details">
+
+<p>
+Ce projet consistait à simuler le comportement de voitures dans un circuit défini en utilisant Python.
+Pour cela nous avons utilisé la bibliothèque numpy pour les calculs numériques. Ce projet ne comprenait pas d'interface graphique. Mais cette image reporésente le parcours que devaient parcourir les voitures dans le projet.
+<br>
+<img class="img-faf" src="images/parcours_mecanique.PNG" alt="Image du projet Fast and Furious"/>
+<br>
+Nous avions une sélection de voitures avec des caractéristiques différentes (masse, accélération, dimentions, etc.) auxquelles nous pouvions ajouter du nos, une jupe, et/ou ub aileron. Nous devions simuler leur comportement en fonction de ces caractéristiques et du circuit. Nous avons utilisé des équations de mouvement pour calculer la position et la vitesse des voitures à des endroits spécifiques du circuit, en tenant compte de facteurs tels que la friction et les forces appliquées. Le projet nous a permis de mettre en pratique nos compétences en programmation et en physique pour créer une simulation du comportement des voitures sur le circuit.
+</p>
+
+<p><strong>Technologies :</strong> Python</p>
+
+<p><strong>Compétences :</strong> simulation, programmation, calcul numérique</p>
+
+</div>
+
+</article>
+
+
+
+
+
+<article class="project-card" onclick="toggleProject(this)">
+
+<h3>Projet Traitement de Signal</h3>
+
+<p class="short">
+Développement d'un système permettant de transmettre un fichier en utilisant un signal simulé.
+</p>
+
+<div class="details">
+
+<p>
+Dans ce projet de traitement du signal, nous avons conçu un système capable de transformer un fichier numérique en signal transmissible, puis de reconstruire le fichier à partir du signal reçu.
+
+Le programme encode les données sous forme de signal, simule leur transmission et applique un processus de décodage pour récupérer les informations d’origine.
+<br>
+<img class="img-Signal" src="images/etapes_signal.png" alt="Étapes suivies afin de moduler et démoduler un fichier en onde sonore"/>
+<br>
+Ce projet permet de comprendre les principes fondamentaux de la communication numérique.
+</p>
+
+<p><strong>Technologies :</strong> Python</p>
+
+<p><strong>Compétences :</strong> traitement de signal, programmation, encodage et décodage de données, manipulation de fichiers, simulation de transmission</p>
+
+</div>
+
+</article>
+
+
+
+
+
+<article class="project-card" onclick="toggleProject(this)">
+
+<h3>Projet Base de données d'entreprise - SQL</h3>
+<p class="short">
+Conception et développement d'une base de données relationnelle permettant de stocker des données de qualité de l'air.
+</p>
+<div class="details">
+<p>
+Ce projet consistait à développer une base de données pour centraliser les données publiques relatives à la qualité de l'air dans plusieurs villes de France. Le système devait permettre de gérer les agences régionales responsables des capteurs, le personnel travaillant dans ces agences ainsi que les capteurs mesurant la concentration de différents gaz dans l'atmosphère.
+<br>
+<img class="img-SQL" src="images/bdd_sql_a1.png" alt="Schéma de la base de données d'entreprise"/>
+</p>
+<p><strong>Technologies :</strong> SQL, MySQL, Looping MCD</p>
+<p><strong>Compétences :</strong> modélisation de base de données relationnelles, conception de schémas de données, écriture de requêtes SQL</p>
+
+</div>
+
+</article>
+
+
+
+
+
+
+</section>
+
+
+
+<script>
+function toggleProject(card) {
+
+card.classList.toggle("active");
+
+const details = card.querySelector(".details");
+
+if(details.style.display === "block"){
+details.style.display = "none";
+}else{
+details.style.display = "block";
+}
+
+}
+</script>
+
+
+
+
+</body>
+</html>
