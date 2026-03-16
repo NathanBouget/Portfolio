@@ -1,41 +1,31 @@
-<!DOCTYPE html>
-<html lang="fr">
+<html>
+    <head>
+        <title> Redirection HTML </title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script> 
+        function isMobileDevice() { 
+ if( navigator.userAgent.match(/iPhone/i)
+ || navigator.userAgent.match(/webOS/i)
+ || navigator.userAgent.match(/Android/i)
+ || navigator.userAgent.match(/iPad/i)
+ || navigator.userAgent.match(/iPod/i)
+ || navigator.userAgent.match(/BlackBerry/i)
+ || navigator.userAgent.match(/Windows Phone/i)
+ ){
+    return true;
+  }
+ else {
+    return false;
+  }
+}
+            if (isMobileDevice()){
+                document.head.innerHTML= '<meta http-equiv="refresh" content="0; URL=Accueil.html">';
+            } else {
+                document.head.innerHTML= '<meta http-equiv="refresh" content="0; URL=Accueil.html">'
+            }
+            </script>
+    </head>
 
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio - Nathan Bouget</title>
-<link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-
-<header>
-<nav class="navbar">
-<h1 class="logo">Nathan Bouget</h1>
-
-<ul class="nav-links">
-<li><a href="index.html">Accueil</a></li>
-<li><a href="projets.html">Projets</a></li>
-<li><a href="competences.html">Compétences</a></li>
-<li><a href="cv.html">CV</a></li>
-<li><a href="apropos.html">À propos</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-</header>
-
-<section class="hero">
-
-<h2>Étudiant ingénieur au CESI</h2>
-
-<p>
-Actuellement en 2ᵉ année de classe préparatoire intégrée.
-</p>
-
-<a class="button" href="projets.html">Voir mes projets</a>
-
-</section>
-
-</body>
+    <body>
+    </body>
 </html>
