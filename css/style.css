@@ -297,4 +297,4 @@ margin: 0 auto;
     justify-content: center;
     gap: 20px; /* Espace entre les images */
     flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire sur petits écrans */
-}
+} 
